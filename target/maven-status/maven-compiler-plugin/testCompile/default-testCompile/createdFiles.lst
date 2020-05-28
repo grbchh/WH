@@ -1,1 +1,8 @@
-Registration.class
+Reg\RNG.class
+Chat\Chat_Test.class
+Chat\Links.class
+Reg\Links.class
+Reg\Registration_CERT.class
+Reg\clipboard.class
+Reg\Registration_PROD.class
+Reg\Registration_GPT.class
