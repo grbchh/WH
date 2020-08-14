@@ -6,7 +6,7 @@ public class RegistrationsButtons {
     private String lastNameField = "#lastName";
     private String emailField = "#email";
     private String nextRegiStepButton = "button.mwc-primary-button:nth-child(1)";
-    private String finishRegiButton ="button.mwc-primary-button:nth-child(1)";
+    private String finishRegiButton = "button.mwc-primary-button:nth-child(1)";
     private String passwordField = "#password";
     private String securityQuestionField1 = "#answerSecurityQs0";
     private String securityQuestionField2 = "#answerSecurityQs1";
@@ -118,9 +118,6 @@ public class RegistrationsButtons {
         return agreementCheckbox4;
     }
 
-    public String getAgreementCheckbox5() {
-        return agreementCheckbox5;
-    }
 
     public String getRegiFinishHeader() {
         return regiFinishHeader;

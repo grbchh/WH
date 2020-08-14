@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import Buttons.AchButtons;
 import Credentials.ACHDepositCredentials;
+import RunTests.RunTests;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -11,12 +12,13 @@ import static com.codeborne.selenide.Selenide.sleep;
 
 public class ACHDeposit {
     AchButtons button = new AchButtons();
+    RunTests portal = new RunTests();
 
 
     public void ACH() {
         ACHDepositCredentials creds = new ACHDepositCredentials();
 
-        Selenide.open(main.portal);
+        Selenide.open(portal.getLink());
         $(button.getDepositButton()).click();
 
         $(button.getDepositHeader()).shouldBe(visible);

@@ -1,7 +1,7 @@
 package DepositFlows;
 
-
-import Registration.Main;
+import Buttons.CreditCardButtons;
+import RunTests.RunTests;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 
@@ -10,14 +10,15 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CreditCardDeposit {
-    Main main = new Main();
+    RunTests portal = new RunTests();
+    CreditCardButtons button = new CreditCardButtons();
 
     public void CC() {
         $(button.getDepositHeader()).shouldBe(visible);
-        if ($(button.backToDepositsMethodsButton).isDisplayed()) {
-            $(button.backToDepositsMethodsButton).click();
+        if ($(button.getBackToDepositsMethodsButton()).isDisplayed()) {
+            $(button.getBackToDepositsMethodsButton()).click();
         }
-        Selenide.open(main.portal);
+        Selenide.open(portal.getLink());
         $("button.Button:nth-child(2) > span:nth-child(1)").shouldBe(enabled).click();
         $("mwc-cashier-list-item.mwc-cashier-list-pm-thumb-container:nth-child(2)")
                 .shouldBe(Condition.enabled).click();

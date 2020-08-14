@@ -1,16 +1,18 @@
 package Buttons;
 
 public class OnlineBankingButtons {
-   private String depositHeader = ".mwc-header-web";
-    private  String onlineBankingButton = "mwc-cashier-list-item.mwc-cashier-list-pm-thumb-container:nth-child(1) > div:nth-child(2)";
-    private String onlineBankingWarningConfirm = "#slider-button";
-    private String onlineBankingDemoBankButton = "#lbx-listBank-select200005501 > div:nth-child(1) > div:nth-child(1)";
-    private String onlineBankingUserField = "#lbx-formAuthenticate-inputusername";
-    private String onlineBankingPassField = "#lbx-formAuthenticate-inputpassword";
-    private String onllineBankingContiniueButton1 = "#lbx-formLogin-submit";
-    private String onllineBankingContiniueButton2 = "#lbx-accountList-submit";
-    private String onllineBankingContiniueButton3 = "#submitDepositForm";
-    private String onlineBankingFinishHeader = ".mwc-cashier-success-receipt-panel-title";
+    private String depositHeader = ".mwc-header-web";
+    private String backToDepositsMethodsButton = "a.ng-binding";
+    private String depositButton = "button.Button:nth-child(2) > span:nth-child(1)";
+    private String onlineBankingButton = "mwc-cashier-list-item.mwc-cashier-list-pm-thumb-container:nth-child(1) > div:nth-child(2)";
+    private String WarningConfirm = "#slider-button";
+    private String DemoBankButton = "#lbx-listBank-select200005501 > div:nth-child(1) > div:nth-child(1)";
+    private String UserField = "#lbx-formAuthenticate-inputusername";
+    private String PassField = "#lbx-formAuthenticate-inputpassword";
+    private String ContiniueButton1 = "#lbx-formLogin-submit";
+    private String ContiniueButton2 = "#lbx-accountList-submit";
+    private String ContiniueButton3 = "#submitDepositForm";
+    private String FinishHeader = ".mwc-cashier-success-receipt-panel-title";
 
     public String getDepositHeader() {
         return depositHeader;
@@ -20,35 +22,43 @@ public class OnlineBankingButtons {
         return onlineBankingButton;
     }
 
-    public String getOnlineBankingWarningConfirm() {
-        return onlineBankingWarningConfirm;
+    public String getWarningConfirm() {
+        return WarningConfirm;
     }
 
-    public String getOnlineBankingDemoBankButton() {
-        return onlineBankingDemoBankButton;
+    public String getDemoBankButton() {
+        return DemoBankButton;
     }
 
-    public String getOnlineBankingUserField() {
-        return onlineBankingUserField;
+    public String getUserField() {
+        return UserField;
     }
 
-    public String getOnlineBankingPassField() {
-        return onlineBankingPassField;
+    public String getPassField() {
+        return PassField;
     }
 
-    public String getOnllineBankingContiniueButton1() {
-        return onllineBankingContiniueButton1;
+    public String getContiniueButton1() {
+        return ContiniueButton1;
     }
 
-    public String getOnllineBankingContiniueButton2() {
-        return onllineBankingContiniueButton2;
+    public String getContiniueButton2() {
+        return ContiniueButton2;
     }
 
-    public String getOnllineBankingContiniueButton3() {
-        return onllineBankingContiniueButton3;
+    public String getContiniueButton3() {
+        return ContiniueButton3;
     }
 
-    public String getOnlineBankingFinishHeader() {
-        return onlineBankingFinishHeader;
+    public String getFinishHeader() {
+        return FinishHeader;
+    }
+
+    public String getBackToDepositsMethodsButton() {
+        return backToDepositsMethodsButton;
+    }
+
+    public String getDepositButton() {
+        return depositButton;
     }
 }
